@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    background-color: #cccccc;
+}
+
+.header-container {
+    background-color: #120323;
+    text-align: center;
+}
+
+h1 {
+    color: #97bf04;
+}
+
+nav {
+    background-color: #d9043d;
+    padding: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+main img {
+    border-bottom: 10px solid #97bf04;
+}
+
+#gallery-container {
+    background-color: white;
+    display: grid;
+    gap: 2rem;
+}
+
+footer {
+    background-color: #d9043d;
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    margin: 0.5rem;
+}
