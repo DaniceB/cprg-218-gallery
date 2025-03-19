@@ -28,8 +28,6 @@ ul {
 }
 
 nav li {
-    text-decoration: none;
-    color: white;
     padding: 0.6rem;
     background-color: #d9043d;
     border: 0.1rem solid #97bf04;
@@ -38,23 +36,28 @@ nav li {
     width: 95%;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
 h2 {
     text-align: center;
 }
 
 main img {
     border-bottom: 10px solid #97bf04;
-    width: 26rem;
-    height: 20rem;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 #gallery-container {
     display: grid;
     gap: 2rem;
     padding: 0.8rem;
-    grid-template-columns: 1, 1fr;
-    width:90%;
+    grid-template-columns: 1fr;
+    width:95%;
     margin:0 auto;
     background-color: white;
 }
@@ -74,16 +77,21 @@ footer {
     }
 
     main img {
-        height: 15rem;
-        width: 20rem;
+        height: auto;
+        max-width: 100%;
+    }
+
+    nav li {
+        display: flex;
+        padding: 1rem;
+        width: 100%;
+        background-color: #d9043d;
+        border: none;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     li a {
-        flex-direction: row;
-        display: flex;
-        background-color: #d9043d;
-        border-style: none;
-        text-align: center;
+        display: grid;
     }
 }
 
@@ -91,5 +99,17 @@ footer {
 @media screen and (min-width: 1000px){
     #gallery-container {
         grid-template-columns: repeat(3,1fr);
+    }
+
+    nav a {
+        display: flex;
+        padding: 1rem;
+        width: 100%;
+        background-color: #d9043d;
+        border: none;
+    }
+
+    li a {
+        display: inline-block;
     }
 }
