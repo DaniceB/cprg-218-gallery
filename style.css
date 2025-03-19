@@ -20,22 +20,22 @@ h1 {
 
 nav {
     padding: 0.5rem;
+    margin: 2rem;
 }
 
 ul {
     list-style-type: none;
 }
 
-li a {
+nav li {
     text-decoration: none;
     color: white;
     padding: 0.6rem;
     background-color: #d9043d;
     border: 0.1rem solid #97bf04;
-}
-
-li {
-    margin: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 95%;
 }
 
 h2 {
@@ -68,7 +68,7 @@ footer {
 }
 
 /* tablet */
-@media screen and (min-width: 48rem){
+@media screen and (min-width: 768px){
     #gallery-container {
         grid-template-columns: repeat(2,1fr);
     }
@@ -88,7 +88,7 @@ footer {
 }
 
 /* laptop */
-@media screen and (min-width: 62.5rem){
+@media screen and (min-width: 1000px){
     #gallery-container {
         grid-template-columns: repeat(3,1fr);
     }
